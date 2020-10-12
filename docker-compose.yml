@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  server:
+    image: aslrousta/mail:latest
+    container_name: mail_server
+    build: .
+    hostname: mail.example.com
+    environment:
+      - HOSTNAME=mail.example.com
+      - USER=admin
+      - PASSWORD=admin
+    volumes:
+      - ./certs:/etc/postfix/certs:ro
+      - ./keys:/etc/dkimkeys
+    ports:
+      - "25:25"

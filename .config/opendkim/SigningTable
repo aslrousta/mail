@@ -1,0 +1,2 @@
+*@$DOMAIN         default._domainkey.$DOMAIN
+*@$HOSTNAME       default._domainkey.$DOMAIN

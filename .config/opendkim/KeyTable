@@ -1,0 +1,1 @@
+default._domainkey.$DOMAIN $DOMAIN:default:/etc/dkimkeys/$DOMAIN/default.private
