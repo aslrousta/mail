@@ -1,5 +1,7 @@
 .dockerignore
 .git/
 Dockerfile
-data/
+README.md
+certs
 docker-compose.yml
+keys
