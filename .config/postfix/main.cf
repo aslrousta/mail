@@ -15,7 +15,7 @@ smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_una
 myhostname = $HOSTNAME
 myorigin = $mydomain
 mydestination = $myhostname, $mydomain, localhost.$mydomain, localhost
-mynetworks = $HOSTIP 172.16.0.0/12 192.168.0.0/16 127.0.0.0/24
+mynetworks = $HOSTIP 172.16.0.0/12 192.168.0.0/16 10.244.0.0/16 127.0.0.0/24
 
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
